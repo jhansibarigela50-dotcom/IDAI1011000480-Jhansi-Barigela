@@ -55,7 +55,8 @@ This NutriWell chatbot aids people in building up their wellness through fitness
 * Motivational Quote Intent – Ends the conversation with a motivational wellness or fitness quote.
 
 
-Entities
+
+**Entities**
 
 * Allergy – Captures the user’s dietary restrictions or food allergies (e.g., nuts, gluten, dairy).
 

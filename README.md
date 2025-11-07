@@ -1,9 +1,85 @@
 # IDAI1011000480-Jhansi-Barigela
-Unit 1: AI-Based Smart Solutions: Designing Chatbots for Real-World Challenges
 
-This NutriWell chatbot aids people in building up their wellness through fitness guidance and tracking. The senario this follows is that of an employee in a health and wellness company that aims to build an intelligent chatbot using their internal AI development team. Through the use of intents and entities the chatbot is able to create a customized dietary plan based on food restrictions, reccomend an approporiate meal plan, and give fitness and hydration reminders. The intents help the conversation flow while the entities allow inputs of unique responses. It begins with the welcome intent where the user is greeted and asked for their name to start the conversation. After the name is provided, the name intent will come into play. This intent has an "any" entity which allows different names to be provided by the user. Throughout the conversation, there are input and output contexts included in the intents, helping direct the conversation in a particular path. This name intent will have an input context of the welome intent and an output context of a name. The text response to their name will continue into getting their age and then their weight. The age and weight intents both have input and output context similar to the first intent where the input would be the users previous response and the output would be what the user should say next. The age intent has an entity that allows the input of any number. The weight has a similar entity except it includes units to differentiate from the previous intent. After the age and weight the chatbot will move onto the fitness goal of the user. The following intents will get information in order to recommend the final meal plan. The user will input their fitness goal in the fitness intent. This intent has an entity that has different types of fitness goals such as losing weight or wanting to gain muslce. Users can input this in many ways so, the goal type intent has a wide range of synonyms to be able to accurately interpret what the user is saying. Next the chatbot will ask for the user's dietary preferences which refers to the type of diet that the user would like, whether that be a keto diet, pescatarian, or veg. This intent has an entity with a variety of different types of diets that could possibly come from the user. Both intents will continue to the next part of the conversation which is the how much time the user has for cooking and their budget. The cooking times will be either short, medium, or long which is connected to a time availability entity showcasing synonyms for user responses such as "I only have 15 minutes". Next is the budget intent which follows the same format with low, high, or medium budget with a matching entity that has synonyms for responses. After this intent comes the dietary restriction warning which asks for the allergies that the user can have. Since this could be a long varied list, to avoid confusing the bot, chips with the a wide range are incorporated. This allows the user to have a direct response instead of have unique wording. If the user has no dietary restrictions it will move to the no-follow up intent and proceed to give the recommended meal plan. This bot also helps with hydration and fitness tracking so the text response after the dietary restrictions would include a choice of traking their water intake. If they answer positively then the chatbot will go ahead with a follow up intent to the yes response and ask the user for the amount of reminders they would like. To keep the conversation flowing, after the user gives their number, it will also ask the the user if they would like to have an exercise reminder too. With the same format, it will ask the amount of times that they would like to get reminded in a week. After the user input it will move onto motivational quotes with which the conversation ends.
+# NutriWell Chatbot
 
-This chatbot was integrated using DialogueFlow and deployed through the internal DialogueFlow Messenger. 
+# Candidate name- Jhansi Barigela
+
+# Candidate Registration Number- 1000480
+
+# CRS Name- Artificial Intelligence
+
+# Course Name: Unit 1-AI-Based Smart Solutions: Designing Chatbots for Real-World Challenges
+
+# School Name- Birla Open Minds Internation School, Kollur, Hyderabad
+
+# Summative Assessment 1
+
+**Overview**
+
+This NutriWell chatbot aids people in building up their wellness through fitness guidance and tracking. The senario this follows is that of an employee in a health and wellness company that aims to build an intelligent chatbot using their internal AI development team. Through the use of intents and entities the chatbot is able to create a customized dietary plan based on food restrictions, reccomend an approporiate meal plan, and give fitness and hydration reminders. The intents help the conversation flow while the entities allow inputs of unique responses.
+
+**Intents** 
+
+* Welcome Intent – Greets the user and asks for their name to start the conversation.
+
+* Name Intent – Captures the user’s name using an “any” entity and responds personally.
+
+* Age Intent – Asks for and records the user’s age with a numeric entity.
+
+* Weight Intent – Collects the user’s weight, including units (kg/lbs), to personalize fitness plans.
+
+* Fitness Goal Intent – Asks about the user’s main fitness goal, such as losing weight or gaining muscle.
+
+* Goal Type Intent – Interprets different ways users express their fitness goals using synonyms.
+
+* Diet Preference Intent – Identifies the user’s preferred diet type (e.g., keto, vegetarian, pescatarian).
+
+* Cooking Time Intent – Gathers how much time the user has for cooking (short, medium, or long).
+
+* Budget Intent – Determines the user’s food budget level (low, medium, or high).
+
+* Dietary Restriction Intent – Asks for any allergies or food restrictions the user may have.
+
+* No Dietary Restriction Intent – Handles users with no food restrictions and proceeds to meal recommendations.
+
+* Meal Plan Recommendation Intent – Provides a personalized meal plan based on all collected data.
+
+* Hydration Tracking Offer Intent – Asks the user if they’d like to track their daily water intake.
+
+* Hydration Reminder Intent – Records how many hydration reminders the user would like per day.
+
+* Exercise Reminder Offer Intent – Asks the user if they’d like to receive exercise reminders.
+
+* Exercise Reminder Frequency Intent – Collects how many times per week the user wants workout reminders.
+
+* Motivational Quote Intent – Ends the conversation with a motivational wellness or fitness quote.
+
+
+Entities
+
+* Allergy – Captures the user’s dietary restrictions or food allergies (e.g., nuts, gluten, dairy).
+
+* Budget Level – Identifies the user’s spending range for meals such as low, medium, or high budget.
+
+* Diet Preference – Detects the user’s preferred diet type like vegan, keto, or pescatarian.
+
+* Exercise_type – Recognizes the type of physical activity or workout the user prefers (e.g., cardio, yoga, strength training).
+
+* Food_item – Extracts specific food names or ingredients mentioned by the user.
+
+* Goal_type – Determines the user’s fitness goal such as losing weight, gaining muscle, or maintaining fitness.
+
+* Hydration_status – Tracks the user’s hydration preferences or water intake level.
+
+* Meal_type – Identifies which meal the user refers to (e.g., breakfast, lunch, dinner, snack).
+
+* Time_availability – Interprets how much time the user has to cook, using inputs like “15 minutes” or “quick meals.”
+
+* Weight – Records the user’s body weight along with the unit (e.g., 60 kg or 130 lbs).
+
+**This chatbot can be integrated into users' daily lives not only as an advisor for information but also as a motivational assistant, guiding them through every step on their wellness journey.**
+
+**To deploy the bot, I used Dialogflow's internal messaging system (Dialogflow Messenger) which I also utilized during the stages of testing and error-checking to ensure that my bot can handle a variety of situations and dilemmas with users from all walks of life.**
 
 Click the below link to interact with the NutriWell Chatbot-  
 https://jhansibarigela50-dotcom.github.io/IDAI1011000480-Jhansi-Barigela/
